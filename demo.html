@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Leaflet - zoom-show-hide demo</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+	<script src="leaflet-zoom-show-hide.js"></script>
+</head>
+<body>
+    Zoom in and out to show/hide the markers.
+    <br/>
+	<div id="mapid"  style="width: 600px; height: 400px;"></div>
+	<script>
+   var map = L.map('mapid').setView([50.096, 14.425], 13);
+   L.tileLayer('https://tiles.prahounakole.cz/{z}/{x}/{y}.png', {
+               attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    }).addTo(map);
+    zsh = new ZoomShowHide(map);
+    var marker1 = L.marker([50.096, 14.425]);
+    zsh.addLayer(marker1, 10, 13);
+    var marker2 = L.marker([50.076, 14.425]);
+    zsh.addLayer(marker2, 8, null);
+	</script>
+
+</body>
+</html>
