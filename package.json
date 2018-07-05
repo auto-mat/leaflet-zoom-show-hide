@@ -1,0 +1,23 @@
+{
+  "name": "leaflet.zoomshowhide",
+  "version": "0.0.0",
+  "description": "Show/hide leaflet layers based on zoom level.",
+  "main": "dist/leaflet-zoom-show-hide.js",
+  "peerDependencies": {
+	"leaflet": "*"
+  },
+  "directories": {
+    "distribution": "./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auto-mat/leaflet-zoom-show-hide.git"
+  },
+  "keywords": [
+    "maps",
+    "leaflet"
+  ],
+  "author": "Timothy Hobbs",
+  "license": "LGPLv3",
+  "readmeFilename": "README.md"
+}

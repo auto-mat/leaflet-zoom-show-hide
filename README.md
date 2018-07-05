@@ -1,6 +1,8 @@
 leaflet-zoom-show-hide
 ----------------------
 
+Npm package [leaflet.zoomshowhide](https://www.npmjs.com/package/leaflet.zoomshowhide)
+
 Show/hide leaflet layers based on zoom level.
 
     zsh = new ZoomShowHide(map);
