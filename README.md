@@ -18,7 +18,7 @@ You can also remove and clear layers.
     zsh.removeLayer(layer1);
     zsh.clearLayers(layer1);
 
-[Demo](http://ipfs.hobbs.cz/ipfs/QmQjk84caPKRxNr2CdVLCM4BfDWk13fGHrzGn6dgUjBd2c/leaflet-zoom-show-hide/demo.html)
+[Demo](http://ipfs.hobbs.cz/ipfs/QmaTcNKrZxPFB4StVjMxaVtR2EciQQuRa47AtRSWbdzehi/leaflet-zoom-show-hide/demo.html)
 
 Also see [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) which merges the markers into groups to reduce crowding instead of hiding them.
 
