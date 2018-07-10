@@ -5,10 +5,18 @@ Npm package [leaflet.zoomshowhide](https://www.npmjs.com/package/leaflet.zoomsho
 
 Show/hide leaflet layers based on zoom level.
 
-    zsh = new ZoomShowHide(map);
-    //  addLayer(layer,  min_zoom, max_zoom);
-    zsh.addLayer(layer1, 7,        14);
-    zsh.addLayer(layer2, 9,        null);
+    zsh = new ZoomShowHide();
+    zsh.addTo(map);
+    layer1.min_zoom = 7;
+    layer1.max_zoom = 14;
+    zsh.addLayer(layer1);
+    layer2.min_zoom = 9;
+    zsh.addLayer(layer2);
+
+You can also remove and clear layers.
+
+    zsh.removeLayer(layer1);
+    zsh.clearLayers(layer1);
 
 [Demo](http://ipfs.hobbs.cz/ipfs/QmQjk84caPKRxNr2CdVLCM4BfDWk13fGHrzGn6dgUjBd2c/leaflet-zoom-show-hide/demo.html)
 

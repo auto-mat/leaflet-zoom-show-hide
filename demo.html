@@ -17,11 +17,15 @@
    L.tileLayer('https://tiles.prahounakole.cz/{z}/{x}/{y}.png', {
                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
     }).addTo(map);
-    zsh = new ZoomShowHide(map);
+    zsh = new ZoomShowHide();
+    zsh.addTo(map);
     var marker1 = L.marker([50.096, 14.425]);
-    zsh.addLayer(marker1, 10, 13);
+    marker1.min_zoom = 9;
+    marker1.max_zoom = 13;
+    zsh.addLayer(marker1);
     var marker2 = L.marker([50.076, 14.425]);
-    zsh.addLayer(marker2, 8, null);
+    marker2.min_zoom = 12;
+    zsh.addLayer(marker2);
 	</script>
 
 </body>
